@@ -6,13 +6,13 @@ export function Info(){
         <div className="infos">
         <SectionTitle text="Languages"/>
         <div className="languages-info">
-          <span>🇺🇸 EN - Fluent</span>
           <span>🇧🇷 PT-BR - Native Speaker</span>
+          <span>🇺🇸 EN - Fluent</span>
         </div>
         <SectionTitle text="Education"/>
         <div className="educational-info">
           <span>🎓</span>
-          <span>Computer Science Bachelors Degree - Universidade Federal de Pelotas</span>
+          <span>Mecatronic Engineer - IFCE</span>
         </div>
       </div>
     )
