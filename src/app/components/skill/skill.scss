@@ -3,48 +3,50 @@
     align-items: center;
     justify-content: center;
     gap: 8px;
-
+  
     img {
-        filter: grayscale(100%);
+      filter: grayscale(35%);
     }
-
+  
     .experience-unit {
-        width: 300px;
-        height: 30px;
-        border-radius: 24px;
-        border: 1px solid var(--text-secondary);
-        
+      width: 300px;
+      height: 30px;
+      border-radius: 24px;
+      border: 1px solid var(--text-secondary); // Utiliza o dourado suave para o contorno
+      
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+  
+      .experience-measure {
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
-
-        .experience-measure {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 999;
-
-            border-radius: 24px;
-            height: 30px;
-            border: 1px solid  linear-gradient(90deg, #777CF4 2.62%, #F47777 93.38%);
-            background: linear-gradient(90deg, #777CF4 2.62%, #F47777 93.38%);
-
-            color: var(--text-primary);
-            font-weight: 300;
-            text-align: center;
-            font-size: 12px;
-
-            &.measure-1 {
-                width: 33%;
-            }
-
-            &.measure-2 {
-                width: 66%;
-            }
-
-            &.measure-3 {
-                width: 100%;
-            }
+        z-index: 999;
+  
+        border-radius: 24px;
+        height: 30px;
+        // Mantendo o gradiente com base nas novas cores, refletindo o tema honeycore
+        border: 1px solid linear-gradient(90deg, #D3A259 2.62%, #F5A623 93.38%); // Tons de mel e laranja quente
+        background: linear-gradient(90deg, #D3A259 2.62%, #F5A623 93.38%); // Gradiente de cores honeycore
+  
+        color: var(--text-primary); // Texto no tom de marrom, respeitando a estética honeycore
+        font-weight: 300;
+        text-align: center;
+        font-size: 12px;
+  
+        &.measure-1 {
+          width: 33%;
         }
+  
+        &.measure-2 {
+          width: 66%;
+        }
+  
+        &.measure-3 {
+          width: 100%;
+        }
+      }
     }
-}
+  }
+  
